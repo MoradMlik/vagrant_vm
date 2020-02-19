@@ -1,8 +1,0 @@
----
-- hosts: localhost
-  become: yes
-  tasks:
-  - name: check git version
-    shell: "git --version"
-    register: retour
-  - debug: var=retour.stdout_lines
